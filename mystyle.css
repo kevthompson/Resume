@@ -42,10 +42,11 @@
 
 .name {
     grid-row: 1;
-    grid-column: 2 / span 3;
+    grid-column: 1 / span 5;
     background-color: white;
     font-family: Source Sans Pro;
     font-weight: normal;
+    text-indent: 10%;
     text-transform: capitalize;
     border-width: 0px;
     border-bottom-width: 15px;
@@ -98,18 +99,26 @@
     margin-bottom: padding: 10px;
 }
 
-p {
-    padding: 15px;
+.section-text {
+    margin: 0px;
+    padding: 0px;
+    grid-row: 4;
+    grid-column: 3 / span 2;
+}
+
+.section-text p {
+    vertical-align: top;
+    text-indent: 40px;
+    text-align: justify;
+    font-size: 18px;
+    padding: 20px;
+    margin: 0px;
     border-width: 15px;
     border-top-style: solid;
     border-bottom-style: solid;
     border-color: #FF7400;
     border-bottom-color: blue;
-    margin: 0px;
-    text-indent: 40px;
-    text-align: justify;
-    grid-row: 4;
-    grid-column: 3 / span 2;
+
 }
 
 .external-item {
