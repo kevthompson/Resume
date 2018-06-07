@@ -78,7 +78,8 @@
 
 .grid-container-body {
     grid-area: 2 / 3 / span 2 / span 2;
-    border-color: #FF7400;
+    border-top-color: #FF7400;
+    border-bottom-color: blue;
     border-style: solid;
     border-width: 0px;
     border-top-width: 15px;
@@ -88,24 +89,29 @@
 }
 
 .section-header {
-    font-size: 25px;
+    font-size: 30px;
     text-align: center;
     grid-row: 2;
     grid-column: 3;
     border-style: solid;
     border-width: 0px;
+/*
     border-bottom-width: 4px;
     border-right-width: 2px;
+*/
     text-transform: uppercase;
+    font-weight: bold;
     margin-top: 20px;
     margin-bottom: padding: 10px;
 }
 
 p {
-    padding: 0px;
+    padding: 15px;
+    border-width: 15px;
     border-top-style: solid;
-    border-top: 15px;
+    border-bottom-style: solid;
     border-color: #FF7400;
+    border-bottom-color: blue;
     margin: 0px;
     text-indent: 40px;
     text-align: justify;
