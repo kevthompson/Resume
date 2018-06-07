@@ -95,12 +95,9 @@
     grid-column: 3;
     border-style: solid;
     border-width: 0px;
-/*
     border-bottom-width: 4px;
     border-right-width: 2px;
-*/
     text-transform: uppercase;
-    font-weight: bold;
     margin-top: 20px;
     margin-bottom: padding: 10px;
 }
