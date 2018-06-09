@@ -1,3 +1,8 @@
+:root {
+    --primary-color: #FF7400;
+    --secondary-color: blue;
+}
+
 * {
     box-sizing: border-box;
 }
@@ -7,37 +12,15 @@
     background-color: white;
     font-family: Source Sans Pro;
     grid-gap: 10px;
-    grid-template-columns: 10% 150px 150px auto 10%;
+    grid-template-columns: 200px 150px auto 10%;
     grid-template-rows: 75px 60px 15px auto 25% 50%;
     border-width: 0px;
-    border-top-width: 30px;
-    border-bottom-width: 100px;
+    border-top-width: 20px;
+    border-bottom-width: 20px;
     border-style: solid;
-    border-color: blue;
+    border-top-color: var(--primary-color);
+    border-bottom-color: var(--secondary-color);
     padding: 0px;
-}
-
-.left-sidebar {
-    grid-area: 2 / 1 / 6 / 2;
-    background-color: #FF7400;
-    border-width: 15px;
-    border-style: black;
-    border-color: solid;
-}
-
-.right-sidebar {
-    grid-area: 2 / 5 / 6 / 6;
-    background-color: #FF7400;
-    border-width: 5px;
-    border-color: black;
-
-}
-
-/* This can set a background color */
-
-.content-container {
-    grid-area: 1 / 2 / 7 / 5;
-    background-color: white;
 }
 
 .name {
@@ -46,41 +29,20 @@
     background-color: white;
     font-family: Source Sans Pro;
     font-weight: normal;
-    text-indent: 10%;
+    text-indent: 200px;
     text-transform: capitalize;
     border-width: 0px;
     border-bottom-width: 15px;
     border-style: solid;
-    border-color: blue;
+    border-color: var(--secondary-color);
     text-align: left;
     font-size: 50px;
 }
 
-.navbar a {
-    display: block;
-    text-align: center;
-    text-transform: uppercase;
-    padding: 15px;
-}
-
-.navbar {
-    grid-column: 2;
-    grid-row: 2 / span 3;
-    background-color: white;
-    border-color: black;
-    border-top-style: solid;
-    border-top-width: 4px;
-    border-bottom-style: solid;
-    border-top-width: 4px;
-    border-right-style: solid;
-    border-right-width: 2px;
-    text-decoration: none;
-}
-
 .grid-container-body {
-    grid-area: 2 / 3 / span 2 / span 2;
-    border-top-color: #FF7400;
-    border-bottom-color: blue;
+    grid-area: 2 / 2 / span 2 / span 2;
+    border-top-color: var(--primary-color);
+    border-bottom-color: var(--secondary-color);
     border-style: solid;
     border-width: 0px;
     border-top-width: 15px;
@@ -93,7 +55,7 @@
     font-size: 32px;
     text-align: center;
     grid-row: 2;
-    grid-column: 3;
+    grid-column: 2;
     text-transform: uppercase;
     margin-top: 20px;
     margin-bottom: padding: 10px;
@@ -103,7 +65,7 @@
     margin: 0px;
     padding: 0px;
     grid-row: 4;
-    grid-column: 3 / span 2;
+    grid-column: 2 / span 2;
 }
 
 .section-text p {
@@ -116,9 +78,27 @@
     border-width: 15px;
     border-top-style: solid;
     border-bottom-style: solid;
-    border-color: #FF7400;
-    border-bottom-color: blue;
+    border-color: var(--primary-color);
+    border-bottom-color: var(--secondary-color);
+}
 
+.navbar a {
+    display: block;
+    text-align: center;
+    text-transform: uppercase;
+    padding: 15px;
+}
+
+.navbar {
+    grid-column: 1;
+    grid-row: 2 / span 4;
+    background-color: white;
+    border-color: black;
+    border-style: solid;
+    border-width: 2px;
+    border-top-width: 4px;
+    border-right-style: solid;
+    text-decoration: none;
 }
 
 .external-item {
@@ -132,7 +112,7 @@
 }
 
 .active-tab {
-    background-color: blue;
+    background-color: var(--secondary-color);
     color: white;
     text-align: center;
     text-decoration: none;
@@ -140,7 +120,7 @@
 
 .inactive-tab:hover,
 .external-item:hover {
-    background-color: #FF7400;
+    background-color: var(--primary-color);
     padding-left: 20px;
 }
 
