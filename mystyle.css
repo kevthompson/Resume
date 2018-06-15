@@ -133,3 +133,7 @@ body {
     border-bottom-color: blue;
     border-bottom-width: 31px;
 }
+
+iframe {
+    border: none;
+}

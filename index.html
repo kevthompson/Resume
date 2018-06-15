@@ -4,11 +4,10 @@
 <head>
     <!-- Required meta tags -->
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1;">
-    
-    
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="./p5/p5.js"></script>
     <link rel="stylesheet" type="text/css" href="mystyle.css">
     <link href="https://fonts.googleapis.com/css?family=Josefin+Sans|Source+Sans+Pro" rel="stylesheet">
     <title>Kevin Thompson</title>
@@ -19,7 +18,7 @@
         <div class="name-container">
             <div class="name">Kevin Thompson</div>
         </div>
-        <div class="navbar-container"> 
+        <div class="navbar-container">
             <div class="navbar">
                 <a class="active-tab" href="#">   About Me   </a>
                 <a class="inactive-tab" href="#"> Education  </a>
@@ -32,37 +31,43 @@
                 <a class="external-item" href="https://www.linkedin.com/in/kevin-thompson-b36675135/"> LinkedIn </a>
             </div>
         </div>
-        
-        <div class="section-header " id="about-me-header"> About Me     </div>
-        <div class="section-text" id="about-me-text"> This is testing to see if a long line would extend the column width to flil the page a bit more appropriately.  </div>
 
-        <div class="section-header " id="education-header"> Education   </div>
+        <div class="section-header " id="about-me-header"> About Me </div>
+        <div class="section-text" id="about-me-text"> This is testing to see if a long line would extend the column width to flil the page a bit more appropriately. </div>
+
+        <div class="section-header " id="education-header"> Education </div>
         <div class="section-text" id="education-text"> a </div>
 
         <div class="section-header " id="experience-header"> Experience </div>
         <div class="section-text" id="experience-text"> a </div>
 
-        <div class="section-header " id="skills-header"> Skills         </div>
-        <div class="section-text" id="skills-text">   a  </div>
+        <div class="section-header " id="skills-header"> Skills </div>
+        <div class="section-text" id="skills-text"> a </div>
 
-        <div class="section-header " id="projects-header"> Projects     </div>
-        <div class="section-text" id="projects-text">  a </div>
+        <div class="section-header " id="projects-header"> Projects </div>
+        <div class="section-text" id="projects-text">
 
-        <div class="section-header " id="documents-header"> Documents   </div>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.6.1/addons/p5.dom.js"></script>
+            <iframe src="https://rawgit.com/kevthompson/ColorRunner/master/colorrunner.html" width="680px" height="520px">
+            </iframe>
+        </div>
+
+        <div class="section-header " id="documents-header"> Documents </div>
         <div class="section-text" id="documents-text"> a </div>
 
         <div class="footer ">You've made it this far, why not <a href="# ">send me an E-Mail?</a> </div>
 
     </div>
-    
+
     <script>
-        $(function(){
+        $(function() {
             $("#about-me-text").load("lorem.txt");
             $("#education-text").load("lorem.txt");
             $("#experience-text").load("lorem.txt");
             $("#skills-text").load("lorem.txt");
-            $("#projects-text").load("lorem.txt");
-            $("#documents-text").load("lorem.txt");        })
+            //            $("#projects-text").load("lorem.txt");
+            $("#documents-text").load("lorem.txt");
+        })
     </script>
 </body>
 
