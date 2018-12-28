@@ -1,74 +1,200 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="./p5/p5.js"></script>
-    <link rel="stylesheet" type="text/css" href="mystyle.css">
-    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans|Source+Sans+Pro" rel="stylesheet">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
     <title>Kevin Thompson</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom fonts for this template -->
+    <link href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:500,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Muli:400,400i,800,800i" rel="stylesheet">
+    <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="css/resume.min.css" rel="stylesheet">
+
 </head>
 
-<body>
-    <div class="page-container">
-        <div class="name-container">
-            <div class="name">Kevin Thompson</div>
-        </div>
-        <div class="navbar-container">
-            <div class="navbar">
-                <a class="active-tab" href="#">   About Me   </a>
-                <a class="inactive-tab" href="#"> Education  </a>
-                <a class="inactive-tab" href="#"> Experience </a>
-                <a class="inactive-tab" href="#"> Skills     </a>
-                <a class="inactive-tab" href="#"> Projects   </a>
-                <a class="inactive-tab" href="#"> Documents  </a>
+<body id="page-top">
 
-                <a class="external-item" href="https://github.com/kevthompson"> GitHub </a>
-                <a class="external-item" href="https://www.linkedin.com/in/kevin-thompson-b36675135/"> LinkedIn </a>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav">
+        <a class="navbar-brand js-scroll-trigger" href="#page-top">
+        <span class="d-block d-lg-none">Kevin Thompson</span>
+        <span class="d-none d-lg-block">
+          <img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="img/profile.jpg" alt="">
+        </span>
+      </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link js-scroll-trigger" href="#about">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link js-scroll-trigger" href="#experience">Experience</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link js-scroll-trigger" href="#education">Education</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link js-scroll-trigger" href="#skills">Skills</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link js-scroll-trigger" href="#interests">Projects &amp; Interests</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container-fluid p-0">
+
+        <section class="resume-section p-3 p-lg-5 d-flex d-column" id="about">
+            <div class="my-auto">
+                <h1 class="mb-0">Kevin
+                    <span class="text-primary">Thompson</span>
+                </h1>
+                <div class="subheading mb-5">1011 W Stoughton Street, Apt 3 · Urbana, IL 61801 · (847) 997 7866 ·
+                    <a href="mailto:kevthompson97@gmail.com">kevthompson97@gmail.com</a>
+                </div>
+                <p class="lead mb-5">I am experienced in leveraging a variety of skills and tools to provide effective solutions to technical challenges. Whether working alone or in a team, I always have something to bring to the table and consistently produce results.</p>
+                <div class="social-icons">
+                    <a href="https://www.linkedin.com/in/kevthompson97/">
+              <i class="fab fa-linkedin-in"></i>
+            </a>
+                    <a href="http://www.github.com/kevthompson">
+              <i class="fab fa-github"></i>
+            </a>
+                </div>
             </div>
-        </div>
+        </section>
 
-        <div class="section-header " id="about-me-header"> About Me </div>
-        <div class="section-text" id="about-me-text"> This is testing to see if a long line would extend the column width to flil the page a bit more appropriately. </div>
+        <hr class="m-0">
 
-        <div class="section-header " id="education-header"> Education </div>
-        <div class="section-text" id="education-text"> a </div>
 
-        <div class="section-header " id="experience-header"> Experience </div>
-        <div class="section-text" id="experience-text"> a </div>
+        <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="experience">
+            <div class="my-auto">
+                <h2 class="mb-2">Experience</h2>
 
-        <div class="section-header " id="skills-header"> Skills </div>
-        <div class="section-text" id="skills-text"> a </div>
+                <div class="resume-item d-flex flex-column flex-md-row mb-5">
+                    <div class="resume-content mr-auto">
+                        <h3 class="mb-0">Enterprise Technology Intern</h3>
+                        <div class="subheading mb-3">State Farm Research &amp; Development Center</div>
+                        <ul>
+                            <li>
+                                Developed tools to monitor the availability of State Farm websites (Javascript/HTML/CSS)
+                            </li>
+                            <li>
+                                Reworked the server code into Node.JS to be more secure and maintainable
+                            </li>
+                            <li>
+                                Manipulated data from SQL databases to display results in an intuitive way
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="resume-date text-md-right">
+                        <span class="text-primary">May 2018 - Present</span>
+                    </div>
+                </div>
+                <div class="resume-item d-flex flex-column flex-md-row mb-5">
+                    <div class="resume-content mr-auto">
+                        <h3 class="mb-0">ECE 220 Course Staff</h3>
+                        <ul>
+                            <li>
+                                Responsible for grading assignments and examinations for $2$ of the $9$ discussion sections
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="resume-date text-md-right">
+                        <span class="text-primary">May 2018 - Present</span>
+                    </div>
+                </div>
+            </div>
 
-        <div class="section-header " id="projects-header"> Projects </div>
-        <div class="section-text" id="projects-text">
+        </section>
 
-            <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.6.1/addons/p5.dom.js"></script>
-            <iframe src="https://rawgit.com/kevthompson/ColorRunner/master/colorrunner.html" width="680px" height="520px">
-            </iframe>
-        </div>
 
-        <div class="section-header " id="documents-header"> Documents </div>
-        <div class="section-text" id="documents-text"> a </div>
+        <hr class="m-0">
 
-        <div class="footer ">You've made it this far, why not <a href="# ">send me an E-Mail?</a> </div>
+        <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="education">
+            <div class="my-auto">
+                <h2 class="mb-2">Education</h2>
+
+                <div class="resume-item d-flex flex-column flex-md-row mb-5">
+                    <div class="resume-content mr-auto">
+                        <h3 class="mb-0">University of Illinois at Urbana-Champaign</h3>
+                        <div class="subheading mb-1">Bachelor of Science</div>
+                        <div>Computer Engineering </div>
+                        <div>Minor in Mathematics </div>
+                        <div>Overall GPA: 3.3</div>
+                        <div class="mb-2">Technical GPA: 3.7</div>
+                        <div class="resume-date text-md-right mb-4">
+                            <span class="text-primary">Expected Graduation: May 2020</span>
+                        </div>
+
+                        <h4 class="mb-0">Classes</h4>
+                        <div></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <hr class="m-0">
+
+        <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="skills">
+            <div class="my-auto">
+                <h2 class="mb-2">Skills</h2>
+
+                <div class="subheading mb-3">Programming Languages &amp; Tools</div>
+                <ul>
+                    <li>
+                        Proficient: C, C++, Python, Haskell, Node.JS
+                    </li>
+                    <li>
+                        Familiar: Assembly (x86), Bash, SQL, Javascript/HTML/CSS, SAS
+                    </li>
+                    <li>
+                        Other skills: LaTeX, Git, AWS, Amazon Alexa, Arduino, Familiarity with Linux, Windows
+                    </li>
+                </ul>
+            </div>
+
+        </section>
+
+
+        <hr class="m-0">
+
+
+        <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="interests">
+            <div class="my-auto">
+                <h2 class="mb-5">Projects &amp; Interests</h2>
+            </div>
+        </section>
+
+
+        <hr class="m-0">
 
     </div>
 
-    <script>
-        $(function() {
-            $("#about-me-text").load("lorem.txt");
-            $("#education-text").load("lorem.txt");
-            $("#experience-text").load("lorem.txt");
-            $("#skills-text").load("lorem.txt");
-            //            $("#projects-text").load("lorem.txt");
-            $("#documents-text").load("lorem.txt");
-        })
-    </script>
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+
+    <!-- Custom scripts for this template -->
+    <script src="js/resume.min.js"></script>
+
 </body>
 
 </html>
