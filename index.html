@@ -64,7 +64,7 @@
             }
 
             setInterval(function () {
-                if (running && seconds >= 0) seconds--;
+                if (running && seconds > 0) seconds--;
                 else if (running) {
                     running = false;
                     timerButton.innerHTML = "Start"
