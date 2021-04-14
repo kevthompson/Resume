@@ -14,8 +14,8 @@
             <div class="col-8">
                 <h1 class="display-1">Better Than Tallon 💁</h1>
             </div>
-            <div class="col-2"></div>
-            <div class="col-2">
+            <div class="col-1"></div>
+            <div class="col-3">
                 <h2 class="display-1" id="timerDisplay">01:00</h2>
             </div>
         </div>
@@ -35,11 +35,11 @@
             let timerInput = document.getElementById("timerInput");
             let timerButton = document.getElementById("timerButton");
 
-            let seconds = 60;
+            let minutes = 60;
             let running = false;
 
             timerInput.oninput = function () {
-                seconds = timerInput.value;
+                minutes = timerInput.value;
                 running = false;
                 timerButton.innerHTML = "Start";
                 updateDisplay();
@@ -56,15 +56,16 @@
             }
 
             let updateDisplay = function () {
-                let formattedTime = (Math.floor(seconds / 60)).toString().padStart(2, '0')
-                    + ':' + (seconds % 60).toString().padStart(2, '0');
+                let formattedTime = Math.floor(minutes / 60).toString().padStart(2, '0')
+                    + ':' + Math.floor(minutes % 60).toString().padStart(2, '0')
+                    + ':' + Math.floor((minutes * 60) % 60).toString().padStart(2, '0');
 
                 timerDisplay.innerHTML = formattedTime;
-                timerInput.value = seconds;
+                timerInput.value = minutes;
             }
 
             setInterval(function () {
-                if (running && seconds > 0) seconds--;
+                if (running && minutes >= 0) minutes -= 1/60;
                 else if (running) {
                     running = false;
                     timerButton.innerHTML = "Start"
